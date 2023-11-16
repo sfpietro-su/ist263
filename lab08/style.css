@@ -1,0 +1,89 @@
+
+h1 {font-size: 3em;}
+h2 {font-size: 2em}
+h3 {
+    font-size: 2em; 
+    text-align: center;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;}
+
+
+.name {
+    font-weight: bolder;
+    font-size: 2em
+}
+
+body {
+    background-color: #91adc2;
+    color: #35524a
+}
+
+a {color: #013220}
+
+nav {
+    color: #013220;
+    background-color: #558a66;
+    padding:10px;
+    margin-bottom:30px
+}
+
+nav a:hover{background-color: #008080}
+
+hr{border-color: #013220}
+
+.quote {float:right}
+
+h1, h2{color: #2c514c}
+
+.row1, .row2 {
+    display:flex;
+}
+
+.row1{
+    padding: 20px;
+    background-color: #9dc1e790; 
+    border-radius: 1em;
+    margin: 0px 20px 20px 0px;
+}
+
+.row1 div{
+    flex: 1;
+}
+
+.empty{
+    flex: 5
+}
+
+.contact {
+    margin: 0px 20px 20px 0px;
+    padding: 20px;
+    background-color: #a3e79d90; 
+    border-radius: 1em;
+}
+
+.map {
+    margin: 0px 20px 20px 0px;
+    padding: 20px;
+    background-color: #94e5c990; 
+    border-radius: 1em;
+}
+
+.main, .flex{
+    display:flex
+}
+
+.main {
+    flex:3;
+    justify-content: space-around;
+}
+
+.other {
+    flex: 1;
+    margin: 20px 20px 20px 50px;
+    padding: 20px;
+    background-color: #94e5c990; 
+    border-radius: 1em;
+}
