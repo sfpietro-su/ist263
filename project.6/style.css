@@ -1,0 +1,47 @@
+@font-face {
+    font-family: title-font;
+    src: url(BlueStyle.otf);
+  }
+
+@font-face {
+    font-family: body;
+    src: url(Handmade.otf);
+  }
+  
+body {
+    background-color: #575f52;
+    color: #d4c8be;
+    font-family: 'body';
+    font-size: larger;
+    letter-spacing: .1rem
+}
+
+nav {
+    padding:10px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    letter-spacing: .15rem;
+}
+
+nav a{
+    color: #d4c8be;
+    display: center
+}
+
+nav a:hover {
+    color: #f6eee9;
+}
+
+nav hr{
+    background-color:darkgreen;
+    border-color: darkgreen;
+}
+
+h1 {
+    font-family: 'title-font'
+}
+
+h1 span {
+    font-size: 200%;
+}
