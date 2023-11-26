@@ -1,6 +1,6 @@
 @font-face {
     font-family: title-font;
-    src: url(BlueStyle.otf);
+    src: url(BabyDoll.otf);
   }
 
 @font-face {
@@ -17,31 +17,164 @@ body {
 }
 
 nav {
+    font-size: 110%;
+    font-weight: bold;
     padding:10px;
     margin: auto;
-    width: 50%;
     text-align: center;
     letter-spacing: .15rem;
 }
 
+.icon{
+    width: 5%;
+    display: none;
+    background-color: #d4c8be;
+    padding: 2px
+}
+
 nav a{
     color: #d4c8be;
-    display: center
+    display: center;
+    text-decoration: none
 }
 
 nav a:hover {
     color: #f6eee9;
 }
 
+.navigation {
+    display: flex
+}
+
+.navigation div{
+    flex: 1
+}
+
+@media only screen and (max-width:600px) {
+    nav {
+        display: none
+    }
+    .icon{
+        display: inline
+    }
+    .icon:hover{
+        background-color: #ffffff;
+        display:block;
+    }
+    h1 span {
+        display: none
+    }
+}
+
 nav hr{
-    background-color:darkgreen;
-    border-color: darkgreen;
+    border-color: #f6eee9;
 }
 
 h1 {
-    font-family: 'title-font'
+    font-size: 500%;
+    float: left;
+    font-family: 'title-font';
+    text-align: center;
+    margin-top: 10%;
 }
 
 h1 span {
-    font-size: 200%;
+    font-size: 50%
+}
+
+p{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    clear: both
+}
+
+.title {
+    display: center;
+    width: 50%;
+    margin: auto;
+}
+
+img {
+    padding: 10px;
+    border-width: 10px;
+    border-radius: 1rem;
+    border-color: #f6eee9
+}
+
+.second {
+    display: flex;
+}
+
+.second div {
+    padding: 1px;
+    margin: auto;
+}
+
+.second div h2 {
+    text-align: center;
+}
+
+.second div img {
+    padding: 10px;
+    border-width: 10px;
+    border-radius: 1rem;
+    border-color: #f6eee9;
+}
+
+.second div p{
+    text-align: left;
+}
+
+.flex {
+    display: flex;
+}
+
+.celiacInfo {
+    background-color: #f6eee97e;
+    color: #3c4338;
+    border-radius: 1rem;
+}
+
+.celiacInfo a {
+    color: #3c4338;
+    padding: 10px
+}
+
+.celiacInfo a:hover {
+    color: #141612;
+}
+
+table {
+    width: 100%;
+    padding: 2%;
+}
+
+th, td, tr {
+    border-bottom: 1px solid black;
+    
+}
+
+.table caption {
+    display: none
+}
+
+.table a{
+    color: #d4c8be;
+    display: center;
+}
+
+.loaf a{
+    color: #d4c8be;
+    display: center;
+}
+
+.loaf a:hover {
+    color: #f6eee9;
+}
+
+footer {
+    clear: both
 }
