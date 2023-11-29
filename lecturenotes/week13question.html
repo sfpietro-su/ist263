@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Question</title>
+        <style>
+            p {border: 2px solid black}
+        </style>
+
+        <script>
+            function rightAnswer() {
+                document.getElementById("right").innerHTML = '<span style="color:green">False is the correct answer<span>';
+            }
+            function wrongAnswer() {
+                document.getElementById("wrong").innerHTML = '<span style="color:red">True is the wrong answer<span>';
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Java and Javascript are the same thing</h1>
+        <p id="wrong" onclick="wrongAnswer();">True</p>
+        <p id="right" onclick="rightAnswer();">False</p>
+    </body>
+
+</html>

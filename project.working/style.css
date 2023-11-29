@@ -13,7 +13,8 @@ body {
     color: #d4c8be;
     font-family: 'body';
     font-size: larger;
-    letter-spacing: .1rem
+    letter-spacing: .1rem;
+    text-align: left
 }
 
 nav {
@@ -50,20 +51,39 @@ nav a:hover {
     flex: 1
 }
 
-@media only screen and (max-width:600px) {
-    nav {
+#close, #humburger {
+    cursor: pointer
+}
+
+@media only screen and (min-width: 800px) {
+    #icon, #close {display: none;}
+    #nav {display: flex}
+}
+@media only screen and (max-width: 799px){
+    #icon {
+        display: inline;
+        text-align: left;
+    }
+    #close {
+        display: none;
+        text-align: left;
+    }
+    #line {
         display: none
     }
-    .icon{
-        display: inline
+    a {
+        display:block;
+        text-align: left;
     }
-    h1 span {
-        display: none
+    #nav {
+        display:none;
+        border: 3px
     }
 }
 
 nav hr{
     border-color: #f6eee9;
+    size: 5px
 }
 
 h1 {

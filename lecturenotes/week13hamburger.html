@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Hamburder Navigation</title>
+        <!--Things to do:
+            CSS:
+                large - no hamburger, no x, side-by-side links
+                mall - show hamburger, show x, stacked links
+
+            JS:
+                click on hamburger to show the links
+                click on x to hide the links
+        -->
+        <style>
+            #hamburger {width: 40px;}
+            #close, #humburger {cursor: pointer}
+            .firstRow {display: flex; justify-content: space-between}
+            @media only screen and (min-width: 800px) {
+                #hamburger, #close {display: none;}
+            }
+            @media only screen and (max-width: 799px){
+                a {
+                    display:block;
+                    padding: 5px;
+                    border: 1px solid black
+                }
+                #links {
+                    display: none
+                }
+            }
+        </style>
+        <script>
+            function showNav(){
+                document.getElementById("links").style.display = "block";
+            }
+            function closeNav(){
+                document.getElementById("links").style.display = "none";
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="icons">
+            <img id="hamburger" src="../images/menu.png" alt="menu" class="icon" onclick="showNav()">
+            <p id="close" onclick="closeNav()">X</p>
+        </div>
+        <nav id="links">
+            <a href="">About</a>
+            <a href="">Skills</a>
+            <a href="">Contact</a>
+        </nav>
+    </body>
+
+</html>

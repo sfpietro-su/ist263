@@ -6,15 +6,12 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>Gluten Free Living</title>
         <link rel="stylesheet" href="style.css">
-        <script>
-            function showMenu() {
-                document.getElementById("nav").style.display = "show";
-            }
-        </script>
+        <script src="script.js"></script>
     </head>
 
-    <body id="page">
-        <img onclick="showMenu()" src="../images/menu.png" alt="menu" class="icon">
+    <body>
+        <img onclick="showMenu()" src="../images/menu.png" alt="menu" class="icon" id="icon">
+        <p onclick="closeMenu()" id="close">x</p>
 
         <nav>
             <div id="nav" class="navigation">
@@ -23,7 +20,7 @@
                 <div><a href="recipes.html"> Recipes</a></div>
                 <div><a href="information.html">More Information</a></div>
             </div>
-            <hr size = 2px>
+            <hr id="line">
         </nav>
 
             <div class="title">
