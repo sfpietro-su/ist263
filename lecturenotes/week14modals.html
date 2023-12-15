@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Modals</title>
+        <style>
+            #close {
+                text-align: right;
+                margin: 0px;
+            }
+            #container {
+                position: relative;
+                margin: 0 auto;
+                width: 800px;
+            }
+            #modal {
+                display: none;
+                background-color: white;
+                border: 1px solid black;
+                width: 200px;
+                padding: 5px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -100px, -100px;
+            }
+            a {
+                background-color: pink;
+                padding: 5px
+            }
+        </style>
+        <script>
+            function openModal() {
+                document.getElementById("modal").style.display = "block";
+            }
+            function closeModal() {
+                document.getElementById("modal").style.display = "none";
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="container">
+            <img src="https://laferger.github.io/ist263/images/cupcakes.jpg" alt="banner of a cupcake">
+            <h1>Desserts</h1>
+            <p>Halvah marzipan donut dessert cupcake. Muffin biscuit apple pie halvah jelly-o tiramisu. Pie pie cheesecake dessert jelly pastry dragée carrot cake. Topping liquorice pie sweet sweet macaroon. Donut cake pudding gingerbread muffin ice cream carrot cake croissant liquorice. Muffin donut bonbon ice cream cookie shortbread biscuit chocolate. Sesame snaps fruitcake carrot cake topping sweet roll. Sweet roll cheesecake jelly beans jelly beans soufflé chupa chups toffee candy canes. Croissant sweet roll powder icing oat cake biscuit. Bear claw candy canes dragée gummies tiramisu bear claw shortbread. Dessert gummi bears muffin liquorice macaroon apple pie sesame snaps toffee macaroon. Bear claw muffin topping powder jelly-o lemon drops. Jujubes brownie chocolate bar carrot cake tart biscuit muffin muffin. Gummies fruitcake fruitcake icing topping sesame snaps cheesecake croissant pie.</p>
+            <p>Icing cupcake chocolate caramels chupa chups soufflé candy canes. Oat cake toffee tart chocolate cake croissant pudding gummies. Cupcake chocolate cake shortbread muffin jelly gummi bears croissant muffin gummies. Jelly beans carrot cake ice cream candy sesame snaps chupa chups macaroon oat cake. Icing icing danish gingerbread chocolate muffin. Fruitcake gummies sweet roll carrot cake halvah tootsie roll caramels candy canes cotton candy. Cake brownie chupa chups apple pie chocolate chocolate pie jelly. Croissant muffin bonbon jelly cotton candy tootsie roll muffin. Toffee danish muffin tootsie roll donut tart sesame snaps cotton candy fruitcake. Chocolate cake cake pie muffin pastry. Gingerbread chocolate bar cupcake cupcake marzipan. Cheesecake brownie shortbread tart biscuit jelly beans marzipan powder. Cheesecake gummi bears liquorice cotton candy sesame snaps macaroon tootsie roll biscuit. Croissant cookie bonbon bonbon lollipop jelly beans dragée biscuit jelly beans.</p>
+            <p>Powder brownie candy wafer dessert chocolate bar candy chocolate cake chocolate cake. Gummi bears jelly beans carrot cake tart chocolate tiramisu. Chocolate cake soufflé chocolate bar biscuit muffin. Marshmallow marshmallow topping croissant bear claw cake. Jelly-o topping topping pie bear claw chocolate cake muffin gingerbread. Brownie gummi bears candy cookie chupa chups topping. Marshmallow topping marzipan candy canes tootsie roll bear claw. Pudding halvah lollipop sweet roll wafer. Ice cream dragée sugar plum jujubes halvah pudding macaroon cookie. Topping oat cake icing sugar plum bear claw lollipop fruitcake. Sugar plum cookie jujubes cake soufflé. Cake pastry icing oat cake cake sesame snaps chupa chups. Brownie ice cream muffin topping marzipan jelly-o sweet roll. Wafer gummi bears sweet tootsie roll sweet roll chocolate cake oat cake.</p>
+            <p><a onclick="openModal();">Subscribe to our Newsletter!</a></p>
+        </div>
+        <div id="modal">
+            <p id="close" onclick="closeModal();">X</p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <input type="submit" class="button" value="subscribe">
+            </form>
+        </div>
+    </body>
+
+</html>
+
+<!--link: https://sfpietro-su.github.io/personal/foldername/filename.html-->
+<!--file:///C:/Users/sofia/OneDrive/Documents/GitHub/personal/foldername/filename.html-->
