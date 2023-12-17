@@ -15,7 +15,6 @@ body {
     font-size: larger;
     letter-spacing: .1rem;
     text-align: left;
-    max-width: 100%;
 }
 
 nav {
@@ -213,4 +212,23 @@ footer {
 .container div {
     flex: 1;
     flex: wrap;
+}
+
+a{
+    color: #d4c8be;
+    display: center;
+}
+
+a:hover {
+    color: #f6eee9;
+}
+
+.info {
+    width: 100%;
+    display:flex
+}
+
+.info div {
+    flex: 1;
+    justify-content: center;
 }
