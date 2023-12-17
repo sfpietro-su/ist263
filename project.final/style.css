@@ -15,10 +15,6 @@ body {
     font-size: larger;
     letter-spacing: .1rem;
     text-align: left;
-    max-width: 100%;
-    overflow-x: hidden;
-
-
 }
 
 nav {
@@ -235,4 +231,16 @@ a:hover {
 .info div {
     flex: 1;
     justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 50%;
+    clear: both
+}
+
+.mySlides {display:none;}
+
+.more {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
